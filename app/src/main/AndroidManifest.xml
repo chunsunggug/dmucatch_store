@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dmucatch_store">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".store.menu.MenuModifyStore_hja"></activity>
+        <activity android:name=".store.account.FindIdPwdStore_csg" />
+        <activity android:name=".store.account.FindIdPwdUser_jjy" />
+        <activity android:name=".store.account.FindIdStore_csg" />
+        <activity android:name=".store.account.FindIdUser_sjh" />
+        <activity android:name=".store.account.FindPwdFinish_csg" />
+        <activity android:name=".store.account.FindPwdStore_csg" />
+        <activity android:name=".store.account.FindPwdUser_sjh" />
+        <activity android:name=".store.account.JoinStore_csg" />
+        <activity android:name=".utility.DaumAddressApi" />
+        <activity android:name=".store.account.LoginUser_kgt">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".store.account.SignUp_kgt" />
+        <activity android:name=".store.account.SignUpEnd_csg" />
+        <activity android:name=".store.menu.MenuCreateStore_ltk" />
+        <activity android:name=".store.menu.MenuListStore_ltk" />
+        <activity android:name=".store.menu.MenuChoose" />
+        <activity android:name=".store.menu.MenuConfirm" />
+        <activity android:name=".store.menu.MenuDelConfirm" />
+        <activity android:name=".store.AppMainOrderList" />
+        <activity android:name=".store.func_catch.CatchFailedUser" />
+        <activity android:name=".store.func_catch.CatchWaitStore" />
+        <activity android:name=".store.func_catch.CatchConfirm" />
+        <activity android:name=".store.func_catch.CatchedConfirm" />
+        <activity android:name=".store.func_catch.RetryCatch" />
+    </application>
+
+</manifest>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--작성자 전제열 캐치 실패 시 화면-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".store.menu.MenuConfirm">
+
+    <TextView
+        android:id="@+id/menuSelected"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="어떤 메뉴?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <Button
+        android:id="@+id/btnDecline"
+        android:layout_width="141dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/button_style"
+        android:text="취소"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnAccept"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPerson" />
+
+    <Button
+        android:id="@+id/btnAccept"
+        android:layout_width="140dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/button_style"
+        android:text="확인"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toEndOf="@+id/btnDecline"
+        app:layout_constraintTop_toBottomOf="@+id/textPerson" />
+
+    <EditText
+        android:id="@+id/textPerson"
+        android:layout_width="121dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="176dp"
+        android:text="1"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuSelected" />
+
+    <ImageButton
+        android:id="@+id/btnRight"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="50dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textPerson"
+        app:layout_constraintTop_toBottomOf="@+id/menuSelected"
+        app:srcCompat="@drawable/right" />
+
+    <ImageButton
+        android:id="@+id/btnLeft"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="50dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toStartOf="@+id/textPerson"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menuSelected"
+        app:srcCompat="@drawable/left" />
+
+</android.support.constraint.ConstraintLayout>
